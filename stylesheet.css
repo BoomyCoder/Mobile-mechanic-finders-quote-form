@@ -1,68 +1,205 @@
+/* General body styling */
 body {
-    background-color: rgb(37, 37, 37);
-    position:relative; 
-    margin: auto;
-    
-    
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
 }
 
+/* Navbar styling */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #4f9cf9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3b80d1;
+}
+
+/* Callout section styling */
+.callout-section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.callout-section h2 {
+  margin-bottom: 10px;
+  color: #4f9cf9;
+  font-size: 1.4rem;
+}
+
+.callout-section p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.callout-section a {
+  color: #4f9cf9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.callout-section a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome section */
+.welcome-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Wrapper for the whole form */
+.form-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.shop-name {
+  text-align: center;
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* Card styling */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 20px; /* 20px rounded corners */
-    width: 350px;
-    background-color: black;
-    margin: auto; 
-   
-  }
-  
-  /* Add rounded corners to the top left and the top right corner of the image */
-  img {
-    border-radius: 5px 5px 0 0;
-  }
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
 
-  .forum {
-    color: white;
-  }
+/* Form heading */
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
 
-  .title {
-    color: white;
-    position: relative; 
-    text-align: center;
-    
-    
-  }
+/* Labels and inputs */
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
 
-  .container {
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #4f9cf9;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Notes */
+.note {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  background-color: #2c2c2c;
+  border-left: 4px solid #4f9cf9;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border-radius: 4px;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4f9cf9;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #3b80d1;
+}
+
+/* TikTok embed container */
+.tiktok-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .card {
     padding: 20px;
   }
-
-  input {
-    border-radius: 20px;
-  }
-
-  .input-button {
-    background-color: blue;
-    color: white;
-    border-radius: 20px;
-    border-color: blue;
-    
-
-  }
-
-  .shop-name {
-    color: white;
-    position: relative; 
-    text-align: center;
-
-    
-   
-    
-  }
-
-  
-  textarea {
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-  }
+}
